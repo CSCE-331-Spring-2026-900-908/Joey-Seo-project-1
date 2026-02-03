@@ -1,0 +1,273 @@
+/* general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b7e7f4;
+    padding: 50px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.intro-section p {
+    font-size: 18px;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
+
+.dotted-line {
+    border: none;
+    border-top: 2px dotted #ccc;
+    margin-bottom: 40px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+
+.btn {
+    display: block;
+    padding: 10px;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background: rgb(255, 255, 255);
+}
+
+.social-icons i {
+    font-size: 24px;  
+    color: #0077b5;  
+    transition: 0.3s; 
+}
+
+.social-icons i:hover {
+    color: #333;   
+    transform: scale(1.1); 
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main grid styling */
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end; 
+    flex-grow: 1;
+}
+
+.nav-item {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: center;
+    background: rgb(202, 255, 175);
+    font-weight: bold;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+/* portfolio section */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    padding: 20px;
+    border: 1px solid #333;
+    background: rgb(202, 255, 175);
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background: white;
+    text-decoration: none;
+    color: black;
+}
+
+/* qualifications section */
+
+.qualifications-section {
+    margin-bottom: 40px;
+}
+
+.qualifications-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.qual-item {
+    padding: 15px;
+    border: 1px solid #333;
+    background: rgb(202, 255, 175);
+    margin-bottom: 15px;
+}
+
+.qual-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.qual-item p {
+    margin: 0;
+    color: #666;
+}
+
+
+.date {
+    font-size: 13px;
+    font-family: Georgia, serif;
+    color: #666;
+    font-style: italic;
+}
+
+/* services section */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    padding: 20px;
+    border: 1px solid #333;
+    background: rgb(202, 255, 175);
+}
+
+.service-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    margin: 0;
+    color: #666;
+}
+
+/* music section */
+
+.music-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.music-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.music-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: 1px solid #333;
+    background: white;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.music-btn:hover {
+    background: rgb(202, 255, 175);
+}
+
+.music-btn i {
+    font-size: 18px;
+}
+
+.music-intro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.music-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.music-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.ai-nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.ai-nav-item {
+    background: #e94560; 
+    color: white;
+    padding: 12px 30px; 
+    text-decoration: none;
+    border-radius: 5px; 
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+    border: none; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.ai-nav-item:hover {
+    background: #ff6b7a;
+    color: white;
+    transform: translateY(-2px); 
+}
+
+.ai-nav-item.active {
+    background: #0f3460; 
+    border: 1px solid #e94560;
+}
